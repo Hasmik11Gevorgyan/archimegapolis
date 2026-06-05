@@ -1,0 +1,373 @@
+{
+    "common": {
+        "enquire": "Enquire",
+        "exploreProjects": "Explore Projects",
+        "ourStory": "Our Story",
+        "scroll": "Scroll",
+        "learnMore": "Learn more",
+        "backToAll": "Back to All Projects",
+        "navigation": "Navigation",
+        "contact": "Contact",
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "footerDesc": "Award-winning architecture studio specializing in luxury residential, commercial, and cultural projects worldwide.",
+        "addressLine1": "136 Fifth Avenue",
+        "addressLine2": "New York, NY 10011",
+        "phone": "+1 (212) 555-0198"
+    },
+    "metadata": {
+        "title": "Archimegapolis | Award-Winning Architecture Studio",
+        "description": "Archimegapolis is an award-winning architecture studio specializing in luxury residential, commercial, and cultural projects worldwide. Timeless design, engineered to perfection.",
+        "keywords": "architecture studio, luxury design, residential architecture, commercial architecture, interior planning, 3D visualization"
+    },
+    "nav": {
+        "about": "About",
+        "services": "Services",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "tagline": "Est. 2014 · Architecture Studio",
+        "title1": "Architectural",
+        "accent": "Design",
+        "title2": "& Planning",
+        "subheading": "Modern residential and commercial projects that transcend the ordinary — where precision engineering meets visionary design.",
+        "years": "Years",
+        "projects": "Projects",
+        "continents": "Continents"
+    },
+    "about": {
+        "tagline": "About Us",
+        "title1": "Architecture as a",
+        "accent": "Discipline",
+        "title2": "of Vision",
+        "p1": "Founded in 2014, Archimegapolis is a globally recognized architecture and design studio operating at the intersection of art, engineering, and culture. Our practice is built on a conviction that great architecture has the power to transform how people live, work, and experience the world.",
+        "p2": "From intimate private residences to landmark civic institutions, every project begins with an honest conversation about place, purpose, and the people who will inhabit the space. We design for the long term — buildings that endure and deepen in meaning over generations.",
+        "stat1": "Years Experience",
+        "stat2": "Projects Completed",
+        "stat3": "Happy Clients"
+    },
+    "services": {
+        "tagline": "Services",
+        "title1": "What We",
+        "accent": "Create",
+        "subheading": "A full spectrum of architectural services delivered with uncompromising precision.",
+        "residentialDesign": {
+            "title": "Residential Design",
+            "description": "Bespoke private homes and luxury residences tailored to your vision.",
+            "details": "Details"
+        },
+        "commercialArchitecture": {
+            "title": "Commercial Architecture",
+            "description": "Landmark office towers and retail environments that strengthen brands.",
+            "details": "Details"
+        },
+        "interiorPlanning": {
+            "title": "Interior Planning",
+            "description": "Holistic interior design that complements architectural intent.",
+            "details": "Details"
+        },
+        "visualization": {
+            "title": "3D Visualization",
+            "description": "Photorealistic renders that bring designs to life before construction.",
+            "details": "Details"
+        },
+        "documentation": {
+            "title": "Technical Documentation",
+            "description": "Precision construction documentation and project management.",
+            "details": "Details"
+        }
+    },
+    "projects": {
+        "tagline": "Portfolio",
+        "title1": "Selected",
+        "accent": "Projects",
+        "filterAll": "All",
+        "filterRes": "Residential",
+        "filterCom": "Commercial",
+        "viewProject": "View Project",
+        "items": {
+            "meridian-tower": {
+                "title": "Meridian Tower",
+                "location": "Dubai, UAE",
+                "description": "A soaring 45-story tower that redefines the Dubai skyline.",
+                "longDescription": "Meridian Tower stands as a testament to modern architectural ambition. Rising 45 stories above Dubai's Financial District, its crystalline facade captures and refracts light throughout the day, creating an ever-changing visual spectacle. The tower integrates passive solar design principles with cutting-edge building management systems to achieve LEED Platinum certification. The ground-level plaza features sculpted water features and native desert landscaping, creating a premium oasis for residents and visitors alike.",
+                "tags": [
+                    "Skyscraper",
+                    "LEED Platinum",
+                    "Mixed-Use"
+                ],
+                "specs": [
+                    {
+                        "label": "Total Area",
+                        "value": "12,500 m²"
+                    },
+                    {
+                        "label": "Floors",
+                        "value": "45"
+                    },
+                    {
+                        "label": "Height",
+                        "value": "198m"
+                    },
+                    {
+                        "label": "Completion",
+                        "value": "2024"
+                    },
+                    {
+                        "label": "Client",
+                        "value": "Meridian Properties LLC"
+                    },
+                    {
+                        "label": "Status",
+                        "value": "Completed"
+                    }
+                ]
+            },
+            "villa-lumina": {
+                "title": "Villa Lumina",
+                "location": "Santorini, Greece",
+                "description": "An exclusive clifftop residence merging raw stone with precision glass.",
+                "longDescription": "Perched dramatically on Santorini's volcanic caldera, Villa Lumina is a masterclass in site-responsive architecture. The design philosophy centered on maximizing the relationship between interior space and the infinite Aegean horizon. Thick volcanic tuff walls provide natural thermal mass, dramatically reducing cooling loads without mechanical assistance. Floor-to-ceiling curved glass walls pull the landscape into every living space. The infinity pool appears to dissolve into the sea 200 meters below, creating a seamless visual continuity.",
+                "tags": [
+                    "Luxury Villa",
+                    "Cliffside",
+                    "Infinity Pool"
+                ],
+                "specs": [
+                    {
+                        "label": "Total Area",
+                        "value": "850 m²"
+                    },
+                    {
+                        "label": "Bedrooms",
+                        "value": "5"
+                    },
+                    {
+                        "label": "Pool Area",
+                        "value": "120 m²"
+                    },
+                    {
+                        "label": "Completion",
+                        "value": "2023"
+                    },
+                    {
+                        "label": "Client",
+                        "value": "Private Commission"
+                    },
+                    {
+                        "label": "Status",
+                        "value": "Completed"
+                    }
+                ]
+            },
+            "axiom-cultural-center": {
+                "title": "Axiom Cultural Center",
+                "location": "Berlin, Germany",
+                "description": "A forward-thinking cultural hub designed for community and creativity.",
+                "longDescription": "The Axiom Cultural Center reimagines civic architecture for the 21st century. Located in the heart of Berlin's creative district, the building's exterior shell is a parametrically designed lattice of weathering steel and glass that references the layered history of the city. Inside, a series of interlocking 'discovery zones' – galleries, performance spaces, workshops, and libraries – are arranged around a dramatic central atrium bathed in diffused natural light. The project earned the German Architecture Prize for its innovative approach to public space.",
+                "tags": [
+                    "Cultural",
+                    "Public Space",
+                    "Award-Winning"
+                ],
+                "specs": [
+                    {
+                        "label": "Total Area",
+                        "value": "8,200 m²"
+                    },
+                    {
+                        "label": "Floors",
+                        "value": "6"
+                    },
+                    {
+                        "label": "Capacity",
+                        "value": "2,400 visitors"
+                    },
+                    {
+                        "label": "Completion",
+                        "value": "2024"
+                    },
+                    {
+                        "label": "Client",
+                        "value": "Berlin City Council"
+                    },
+                    {
+                        "label": "Status",
+                        "value": "Completed"
+                    }
+                ]
+            },
+            "casa-nevada": {
+                "title": "Casa Nevada",
+                "location": "Aspen, USA",
+                "description": "Mountain retreat that harmonizes alpine tradition with contemporary luxury.",
+                "longDescription": "Casa Nevada is a high-altitude private residence that celebrates the drama of Colorado's mountain landscape. The design process began with extensive site analysis to understand seasonal sun angles, prevailing winds, and snowfall patterns. These environmental data points shaped every formal decision, from the deep cantilevered roof overhangs that shed snow and create sheltered outdoor terraces, to the strategic placement of glazing that frames curated mountain views while minimizing heat loss. Hand-selected local stone forms the primary exterior and interior finish, creating a palette that is deeply rooted in place.",
+                "tags": [
+                    "Mountain Retreat",
+                    "Stone & Glass",
+                    "Sustainable"
+                ],
+                "specs": [
+                    {
+                        "label": "Total Area",
+                        "value": "650 m²"
+                    },
+                    {
+                        "label": "Bedrooms",
+                        "value": "4"
+                    },
+                    {
+                        "label": "Altitude",
+                        "value": "2,850m"
+                    },
+                    {
+                        "label": "Completion",
+                        "value": "2023"
+                    },
+                    {
+                        "label": "Client",
+                        "value": "Private Commission"
+                    },
+                    {
+                        "label": "Status",
+                        "value": "Completed"
+                    }
+                ]
+            },
+            "onyx-headquarters": {
+                "title": "Onyx Headquarters",
+                "location": "Singapore",
+                "description": "A tropical tech campus that revolutionizes the workplace experience.",
+                "longDescription": "Onyx Headquarters redefines the corporate campus typology for a tropical context. Rather than a single monolithic block, the design comprises six interconnected pavilions arranged around a lush internal garden courtyard. Sky gardens at every third floor blur the boundary between interior and exterior, allowing vegetation to cascade down the building's facade. The campus accommodates 3,000 employees across research labs, collaborative studios, and executive offices, all connected by a continuous 'innovation loop' — a walking and cycling path that encourages informal exchange.",
+                "tags": [
+                    "Corporate Campus",
+                    "Biophilic Design",
+                    "Tropical"
+                ],
+                "specs": [
+                    {
+                        "label": "Total Area",
+                        "value": "23,000 m²"
+                    },
+                    {
+                        "label": "Buildings",
+                        "value": "6 Pavilions"
+                    },
+                    {
+                        "label": "Employees",
+                        "value": "3,000"
+                    },
+                    {
+                        "label": "Completion",
+                        "value": "2022"
+                    },
+                    {
+                        "label": "Client",
+                        "value": "Onyx Technologies"
+                    },
+                    {
+                        "label": "Status",
+                        "value": "Completed"
+                    }
+                ]
+            },
+            "maison-noir": {
+                "title": "Maison Noir",
+                "location": "Paris, France",
+                "description": "A bold Parisian townhouse exploring the tension between old and new.",
+                "longDescription": "Maison Noir is an architectural intervention within a protected 19th-century Haussmann building in the 8th arrondissement of Paris. The dual challenge was to preserve the elegant historic street facade while dramatically reinventing the interior for a 21st-century lifestyle. The solution introduces a dark-toned interior world — black-stained oak, anthracite stone, and blackened steel — that exists in deliberate and dramatic contrast to the cream-colored plaster and ornate moldings of the original structure. A new glass-floored bridge connects the historic front rooms to a contemporary rear pavilion.",
+                "tags": [
+                    "Renovation",
+                    "Historic Building",
+                    "Paris"
+                ],
+                "specs": [
+                    {
+                        "label": "Total Area",
+                        "value": "420 m²"
+                    },
+                    {
+                        "label": "Floors",
+                        "value": "4"
+                    },
+                    {
+                        "label": "Style",
+                        "value": "Renovation"
+                    },
+                    {
+                        "label": "Completion",
+                        "value": "2022"
+                    },
+                    {
+                        "label": "Client",
+                        "value": "Private Commission"
+                    },
+                    {
+                        "label": "Status",
+                        "value": "Completed"
+                    }
+                ]
+            }
+        }
+    },
+    "whyUs": {
+        "tagline": "Why Choose Us",
+        "title1": "The",
+        "accent": "Archimegapolis",
+        "title2": "Difference",
+        "subheading": "Decades of experience distilled into a practice where every decision is intentional and every detail matters.",
+        "points": [
+            {
+                "title": "Visionary Approach",
+                "description": "We don't just build structures; we create environments that inspire and endure."
+            },
+            {
+                "title": "Technical Excellence",
+                "description": "Our team combines artistic vision with rigorous architectural engineering."
+            },
+            {
+                "title": "Sustainable Focus",
+                "description": "Integrating passive design and sustainable materials into every project."
+            },
+            {
+                "title": "Global Experience",
+                "description": "Successfully delivered projects across five continents and diverse cultures."
+            }
+        ],
+        "satisfactionValue": "98%",
+        "satisfactionLabel": "Client Satisfaction"
+    },
+    "contact": {
+        "tagline": "Contact",
+        "title1": "Begin Your",
+        "accent": "Project",
+        "subheading": "Whether you have a fully formed vision or just the seed of an idea, we'd love to hear from you. Every great building starts with a conversation.",
+        "email": "Email",
+        "phoneLabel": "Phone",
+        "studio": "Studio",
+        "address": "136 Fifth Avenue, New York, NY 10011",
+        "form": {
+            "name": "Full Name *",
+            "email": "Email Address *",
+            "phone": "Phone (Optional)",
+            "type": "Project Type",
+            "typeRes": "Residential",
+            "typeCom": "Commercial",
+            "typeInt": "Interior Planning",
+            "typeVis": "3D Visualization",
+            "typeOther": "Other",
+            "message": "Tell us about your project *",
+            "submit": "Send Enquiry",
+            "sending": "Sending...",
+            "successTitle": "Message Sent",
+            "successText": "Thank you for reaching out. A member of our team will be in touch within one business day.",
+            "backToHome": "Back to Home"
+        }
+    },
+    "projectDetail": {
+        "specs": "Project Specifications",
+        "related": "Related Projects"
+    }
+}
