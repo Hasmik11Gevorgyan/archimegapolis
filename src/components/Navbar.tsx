@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import logoImage from "../../public/logo.png";
+import logoImage from "../../public/logo_gold.png";
 import { Dictionary } from "@/types/i18n";
 import Button from "./Button";
 import LanguageSwitcher from "./LanguageSwitcher";

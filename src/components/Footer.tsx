@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Twitter, Linkedin, Facebook, ArrowUp } from "lucide-react";
 import Image from "next/image";
-import logoImage from "../../public/logo.png";
+import logoImage from "../../public/logo_gold.png";
 
 interface FooterProps {
     lang: string;
@@ -48,7 +48,7 @@ export default function Footer({ lang, dict, common }: FooterProps) {
     ];
 
     return (
-        <footer className="bg-bg-primary pt-24 pb-12 border-t border-border-subtle">
+        <footer className="pt-24 pb-12 border-t border-border-subtle" style={{ backgroundColor: 'var(--color-footer)' }}>
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
                     {/* Brand */}
@@ -60,7 +60,7 @@ export default function Footer({ lang, dict, common }: FooterProps) {
                                 className="h-10 lg:h-12 w-auto hover:opacity-90 transition-opacity duration-300"
                             />
                         </a>
-                        <p className="text-text-muted text-sm leading-relaxed max-w-xs mb-8">
+                        <p className="text-slate-300 text-sm leading-relaxed max-w-xs mb-8">
                             {common.footerDesc}
                         </p>
                         <div className="flex gap-4">
@@ -68,7 +68,7 @@ export default function Footer({ lang, dict, common }: FooterProps) {
                                 <a
                                     key={social.label}
                                     href={social.href}
-                                    className="w-10 h-10 border border-border-subtle flex items-center justify-center text-text-muted hover:text-accent hover:border-accent transition-all duration-300"
+                                    className="w-10 h-10 border border-slate-600 flex items-center justify-center text-slate-300 hover:text-accent hover:border-accent transition-all duration-300"
                                     aria-label={social.label}
                                 >
                                     <social.icon size={18} />
@@ -79,7 +79,7 @@ export default function Footer({ lang, dict, common }: FooterProps) {
 
                     {/* Navigation */}
                     <div>
-                        <h4 className="text-text-primary text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                        <h4 className="text-slate-100 text-xs font-bold uppercase tracking-[0.2em] mb-8">
                             {common.navigation}
                         </h4>
                         <ul className="space-y-4">
@@ -87,7 +87,7 @@ export default function Footer({ lang, dict, common }: FooterProps) {
                                 <li key={link.label}>
                                     <a
                                         href={link.href}
-                                        className="text-text-muted hover:text-accent text-sm transition-colors duration-300"
+                                        className="text-slate-300 hover:text-accent text-sm transition-colors duration-300"
                                     >
                                         {link.label}
                                     </a>
@@ -98,10 +98,10 @@ export default function Footer({ lang, dict, common }: FooterProps) {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="text-text-primary text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                        <h4 className="text-slate-100 text-xs font-bold uppercase tracking-[0.2em] mb-8">
                             {common.contact}
                         </h4>
-                        <ul className="space-y-4 text-sm text-text-muted">
+                        <ul className="space-y-4 text-sm text-slate-300">
                             <li>
                                 <a href="https://www.google.com/maps/search/?api=1&query=Vedi,+Spandaryan+7/1" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-300 block">
                                     {common.addressLine1}
@@ -129,7 +129,7 @@ export default function Footer({ lang, dict, common }: FooterProps) {
                     <div className="flex flex-col items-start lg:items-end justify-between uppercase">
                         <button
                             onClick={scrollToTop}
-                            className="bg-bg-secondary border border-border-subtle p-6 hover:border-accent group transition-all duration-500"
+                            className="bg-slate-700 border border-slate-600 p-6 hover:border-accent group transition-all duration-500"
                         >
                             <ArrowUp
                                 size={24}
@@ -141,10 +141,10 @@ export default function Footer({ lang, dict, common }: FooterProps) {
 
                 {/* Bottom bar */}
                 <div className="pt-12 border-t border-border-subtle flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div className="text-text-muted text-[10px] tracking-[0.1em] font-medium">
+                    <div className="text-slate-400 text-[10px] tracking-[0.1em] font-medium">
                         © {currentYear} ARCHIMEGAPOLIS. {common.rights}
                     </div>
-                    <div className="flex gap-8 text-[10px] tracking-[0.1em] font-medium uppercase text-text-muted">
+                    <div className="flex gap-8 text-[10px] tracking-[0.1em] font-medium uppercase text-slate-400">
                         <a href="#" className="hover:text-accent transition-colors">
                             {common.privacy}
                         </a>
