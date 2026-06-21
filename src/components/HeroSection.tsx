@@ -1,8 +1,28 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Button from "./Button";
+import { useCountUp } from "@/lib/hooks";
+
+function StatCounter({ value, label, suffix = "", className = "text-center" }: { value: string; label: string; suffix?: string, className?: string }) {
+    const ref = useRef<HTMLDivElement>(null);
+    const inView = useInView(ref, { once: true });
+    const numericValue = parseInt(value, 10);
+    const count = useCountUp(inView ? numericValue : 0, 2000);
+
+    return (
+        <div ref={ref} className={className}>
+            <div className="text-accent font-display text-2xl font-bold">
+                {count}{suffix}
+            </div>
+            <div className="text-text-muted text-[10px] sm:text-xs tracking-widest uppercase mt-1">
+                {label}
+            </div>
+        </div>
+    );
+}
 
 interface HeroSectionProps {
     dict: {
@@ -45,9 +65,9 @@ export default function HeroSection({ dict, common }: HeroSectionProps) {
                             "url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=85')",
                     }}
                 />
-                {/* Dark overlay with gradient */}
-                <div className="absolute inset-0 bg-gradient-to-b from-bg-primary/70 via-bg-primary/50 to-bg-primary/90" />
-                <div className="absolute inset-0 bg-gradient-to-r from-bg-primary/60 via-transparent to-bg-primary/40" />
+                {/* Light overlay with gradient */}
+                <div className="absolute inset-0 bg-gradient-to-b from-bg-primary/80 via-bg-primary/70 to-bg-primary" />
+                <div className="absolute inset-0 bg-gradient-to-r from-bg-primary/80 via-transparent to-bg-primary/60" />
             </div>
 
             {/* Animated accent line */}
@@ -110,6 +130,28 @@ export default function HeroSection({ dict, common }: HeroSectionProps) {
                             {common.ourStory}
                         </Button>
                     </motion.div>
+
+                    {/* Stats bar - Mobile & Tablet */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 1.3 }}
+                        className="mt-12 flex lg:hidden gap-6 sm:gap-12 border-l border-border-subtle pl-6 text-left"
+                    >
+                        {[
+                            { val: "7", label: dict.years, suffix: "+" },
+                            { val: "250", label: dict.projects, suffix: "+" },
+                            { val: "5", label: dict.continents, suffix: "" },
+                        ].map((stat) => (
+                            <StatCounter 
+                                key={stat.label}
+                                value={stat.val}
+                                label={stat.label}
+                                suffix={stat.suffix}
+                                className="text-left"
+                            />
+                        ))}
+                    </motion.div>
                 </div>
             </div>
 
@@ -120,21 +162,20 @@ export default function HeroSection({ dict, common }: HeroSectionProps) {
                 transition={{ duration: 0.8, delay: 1.3 }}
                 className="absolute bottom-24 left-0 right-0 z-10 hidden lg:block"
             >
-                <div className="max-w-7xl mx-auto px-12">
-                    <div className="flex gap-12 border-l border-border-subtle pl-12">
+                <div className="max-w-7xl mx-auto px-12 flex justify-end">
+                    <div className="flex gap-12 border-l border-border-subtle pl-12 text-left">
                         {[
-                            { val: "10+", label: dict.years },
-                            { val: "120+", label: dict.projects },
-                            { val: "5", label: dict.continents },
+                            { val: "7", label: dict.years, suffix: "+" },
+                            { val: "250", label: dict.projects, suffix: "+" },
+                            { val: "5", label: dict.continents, suffix: "" },
                         ].map((stat) => (
-                            <div key={stat.label} className="text-center">
-                                <div className="text-accent font-display text-2xl font-bold">
-                                    {stat.val}
-                                </div>
-                                <div className="text-text-muted text-xs tracking-widest uppercase mt-1">
-                                    {stat.label}
-                                </div>
-                            </div>
+                            <StatCounter 
+                                key={stat.label}
+                                value={stat.val}
+                                label={stat.label}
+                                suffix={stat.suffix}
+                                className="text-center"
+                            />
                         ))}
                     </div>
                 </div>

@@ -57,7 +57,7 @@ export default function ProjectsSection({ lang, dict }: ProjectsSectionProps) {
     ];
 
     return (
-        <Section id="projects" className="bg-bg-primary py-24 lg:py-32">
+        <Section id="projects" className="bg-bg-primary py-16 lg:py-32">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
                     <div className="max-w-2xl">

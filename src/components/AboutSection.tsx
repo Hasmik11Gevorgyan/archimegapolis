@@ -40,7 +40,7 @@ interface AboutSectionProps {
 
 export default function AboutSection({ dict }: AboutSectionProps) {
     return (
-        <Section id="about" className="bg-bg-secondary py-24 lg:py-32">
+        <Section id="about" className="bg-bg-secondary py-16 lg:py-32">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                     {/* Left: Text */}
@@ -93,11 +93,10 @@ export default function AboutSection({ dict }: AboutSectionProps) {
 
                     {/* Right: Stats */}
                     <div>
-                        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-10 lg:gap-12">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-10 lg:gap-12">
                             {[
-                                { value: "10", label: dict.stat1, suffix: "+" },
-                                { value: "120", label: dict.stat2, suffix: "+" },
-                                { value: "50", label: dict.stat3, suffix: "+" },
+                                { value: "7", label: dict.stat1, suffix: "+" },
+                                { value: "250", label: dict.stat2, suffix: "+" },
                             ].map((stat) => (
                                 <div
                                     key={stat.label}

@@ -3,23 +3,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-primary: #0f0f0f;
-  --color-bg-secondary: #1a1a1a;
-  --color-text-primary: #f5f5f5;
-  --color-text-muted: #a1a1a1;
-  --color-accent: #d4af37;
-  --color-accent-light: #e8c84a;
-  --color-accent-dark: #b8962e;
-  --color-border-subtle: #2a2a2a;
-  --color-border-accent: #d4af37;
+  --color-bg-primary: #fdfbf7;
+  --color-bg-secondary: #ffffff;
+  --color-text-primary: #2c2c2c;
+  --color-text-muted: #6b7280;
+  --color-accent: #fca5a5;
+  --color-accent-light: #fecaca;
+  --color-accent-dark: #f87171;
+  --color-border-subtle: #e5e7eb;
+  --color-border-accent: #fca5a5;
 
   --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "Playfair Display", Georgia, serif;
 
-  --shadow-gold: 0 0 20px rgba(212, 175, 55, 0.3);
-  --shadow-gold-lg: 0 0 40px rgba(212, 175, 55, 0.4);
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
-  --shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 0 20px rgba(252, 165, 165, 0.3);
+  --shadow-gold-lg: 0 0 40px rgba(252, 165, 165, 0.4);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.12);
 
   --spacing-18: 4.5rem;
   --spacing-22: 5.5rem;
@@ -88,8 +88,8 @@
   }
 
   ::selection {
-    background-color: rgba(212, 175, 55, 0.3);
-    color: #f5f5f5;
+    background-color: rgba(252, 165, 165, 0.3);
+    color: #2c2c2c;
   }
 
   ::-webkit-scrollbar {
@@ -97,16 +97,16 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0f0f0f;
+    background: #fdfbf7;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #d4af37;
+    background: #fca5a5;
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #e8c84a;
+    background: #f87171;
   }
 }
 
@@ -131,7 +131,7 @@
   }
 
   .glass {
-    background: rgba(26, 26, 26, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }

@@ -12,9 +12,9 @@
         "privacy": "Политика конфиденциальности",
         "terms": "Условия использования",
         "footerDesc": "Титулованная архитектурная студия, специализирующаяся на роскошных жилых, коммерческих и культурных проектах по всему миру.",
-        "addressLine1": "136 Пятая Авеню",
-        "addressLine2": "Нью-Йорк, NY 10011",
-        "phone": "+1 (212) 555-0198"
+        "addressLine1": "Spandaryan 7/1",
+        "addressLine2": "Vedi",
+        "phone": "+37494567416"
     },
     "metadata": {
         "title": "Archimegapolis | Титулованная архитектурная студия",
@@ -347,7 +347,7 @@
         "email": "Email",
         "phoneLabel": "Телефон",
         "studio": "Студия",
-        "address": "136 Fifth Avenue, New York, NY 10011",
+        "address": "Vedi, Spandaryan 7/1",
         "form": {
             "name": "Полное имя *",
             "email": "Электронная почта *",

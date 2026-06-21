@@ -74,7 +74,7 @@ export default function ContactSection({ dict }: ContactSectionProps) {
     }
 
     return (
-        <Section id="contact" className="bg-bg-primary py-24 lg:py-32">
+        <Section id="contact" className="bg-bg-primary py-16 lg:py-32">
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
                     {/* Left: Info */}
@@ -117,13 +117,15 @@ export default function ContactSection({ dict }: ContactSectionProps) {
                                 {
                                     icon: Mail,
                                     label: dict.email,
-                                    value: "hello@archimegapolis.com",
+                                    value: "archimegapolis@gmail.com",
+                                    href: "mailto:archimegapolis@gmail.com"
                                 },
-                                { icon: Phone, label: dict.phoneLabel, value: "+1 (212) 555-0198" },
+                                { icon: Phone, label: dict.phoneLabel, value: "+37494567416", href: "tel:+37494567416" },
                                 {
                                     icon: MapPin,
                                     label: dict.studio,
                                     value: dict.address,
+                                    href: "https://www.google.com/maps/search/?api=1&query=Vedi,+Spandaryan+7/1"
                                 },
                             ].map((item, idx) => (
                                 <motion.div
@@ -141,9 +143,14 @@ export default function ContactSection({ dict }: ContactSectionProps) {
                                         <div className="text-text-muted text-[10px] uppercase tracking-[0.2em] font-bold mb-1">
                                             {item.label}
                                         </div>
-                                        <div className="text-text-primary font-medium hover:text-accent transition-colors cursor-pointer">
+                                        <a 
+                                            href={item.href} 
+                                            target={item.icon === MapPin ? "_blank" : undefined} 
+                                            rel={item.icon === MapPin ? "noopener noreferrer" : undefined} 
+                                            className="text-text-primary font-medium hover:text-accent transition-colors cursor-pointer block"
+                                        >
                                             {item.value}
-                                        </div>
+                                        </a>
                                     </div>
                                 </motion.div>
                             ))}

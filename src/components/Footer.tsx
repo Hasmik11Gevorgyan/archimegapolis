@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Instagram, Twitter, Linkedin, Facebook, ArrowUp } from "lucide-react";
+import Image from "next/image";
+import logoImage from "../../public/logo.png";
 
 interface FooterProps {
     lang: string;
@@ -52,8 +54,8 @@ export default function Footer({ lang, dict, common }: FooterProps) {
                     {/* Brand */}
                     <div className="lg:col-span-1">
                         <a href={`/${lang}`} className="relative group inline-block mb-8">
-                            <img
-                                src="/logo.png"
+                            <Image
+                                src={logoImage}
                                 alt="Archimegapolis Logo"
                                 className="h-10 lg:h-12 w-auto hover:opacity-90 transition-opacity duration-300"
                             />
@@ -100,11 +102,25 @@ export default function Footer({ lang, dict, common }: FooterProps) {
                             {common.contact}
                         </h4>
                         <ul className="space-y-4 text-sm text-text-muted">
-                            <li>{common.addressLine1}</li>
-                            <li>{common.addressLine2}</li>
-                            <li>{common.phone}</li>
-                            <li className="text-accent underline underline-offset-4 cursor-pointer">
-                                hello@archimegapolis.com
+                            <li>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Vedi,+Spandaryan+7/1" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-300 block">
+                                    {common.addressLine1}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Vedi,+Spandaryan+7/1" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-300 block">
+                                    {common.addressLine2}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+37494567416" className="hover:text-accent transition-colors duration-300 block">
+                                    {common.phone}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:archimegapolis@gmail.com" className="text-accent underline underline-offset-4 hover:text-text-primary transition-colors duration-300 block">
+                                    archimegapolis@gmail.com
+                                </a>
                             </li>
                         </ul>
                     </div>

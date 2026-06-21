@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import logoImage from "../../public/logo.png";
 import { Dictionary } from "@/types/i18n";
 import Button from "./Button";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -32,37 +34,55 @@ export default function Navbar({ lang, dict, common }: NavbarProps) {
         { label: dict.contact, href: "#contact" },
     ];
 
+    const leftLinks = navLinks.slice(0, 2);
+    const rightLinks = navLinks.slice(2, 4);
+
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-bg-primary/90 backdrop-blur-md py-4 border-b border-border-subtle" : "bg-transparent py-8"
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
-                {/* Logo */}
-                <a href={`/${lang}`} className="relative group flex items-center">
-                    <img
-                        src="/logo.png"
-                        alt="Archimegapolis Logo"
-                        className="h-12 lg:h-14 w-auto hover:opacity-90 transition-opacity duration-300"
-                    />
-                </a>
+            <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between relative">
+                
+                {/* Desktop Left Navigation */}
+                <div className="hidden lg:flex items-center gap-10 flex-1 justify-end pr-8 xl:pr-12">
+                    {leftLinks.map((link) => (
+                        <a
+                            key={link.label}
+                            href={link.href}
+                            className="text-xs uppercase tracking-[0.2em] font-medium text-text-muted hover:text-accent transition-colors relative group py-2"
+                        >
+                            {link.label}
+                            <span className="absolute bottom-0 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
+                        </a>
+                    ))}
+                </div>
 
-                {/* Desktop Navigation */}
-                <div className="hidden lg:flex items-center gap-12">
-                    <div className="flex items-center gap-10">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.label}
-                                href={link.href}
-                                className="text-xs uppercase tracking-[0.2em] font-medium text-text-muted hover:text-accent transition-colors relative group py-2"
-                            >
-                                {link.label}
-                                <span className="absolute bottom-0 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
-                            </a>
-                        ))}
-                    </div>
+                {/* Logo (Centered on Desktop) */}
+                <div className="flex-shrink-0 flex items-center justify-start lg:justify-center lg:flex-none relative z-10">
+                    <a href={`/${lang}`} className="relative group block">
+                        <Image
+                            src={logoImage}
+                            alt="Archimegapolis Logo"
+                            className="h-16 lg:h-20 w-auto hover:opacity-90 transition-opacity duration-300"
+                        />
+                    </a>
+                </div>
 
-                    <div className="flex items-center gap-6 border-l border-border-subtle pl-10">
+                {/* Desktop Right Navigation & Actions */}
+                <div className="hidden lg:flex items-center gap-8 xl:gap-10 flex-1 justify-start pl-8 xl:pl-12">
+                    {rightLinks.map((link) => (
+                        <a
+                            key={link.label}
+                            href={link.href}
+                            className="text-xs uppercase tracking-[0.2em] font-medium text-text-muted hover:text-accent transition-colors relative group py-2"
+                        >
+                            {link.label}
+                            <span className="absolute bottom-0 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
+                        </a>
+                    ))}
+
+                    <div className="flex items-center gap-6 border-l border-border-subtle pl-8 xl:pl-10">
                         <LanguageSwitcher currentLang={lang as any} />
                         <Button variant="outline" size="sm" href="#contact">
                             {common.enquire}
@@ -71,7 +91,7 @@ export default function Navbar({ lang, dict, common }: NavbarProps) {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <div className="flex items-center gap-4 lg:hidden">
+                <div className="flex items-center gap-4 lg:hidden relative z-10">
                     <LanguageSwitcher currentLang={lang as any} />
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

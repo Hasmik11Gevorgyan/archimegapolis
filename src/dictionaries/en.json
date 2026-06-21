@@ -12,9 +12,9 @@
         "privacy": "Privacy Policy",
         "terms": "Terms of Use",
         "footerDesc": "Award-winning architecture studio specializing in luxury residential, commercial, and cultural projects worldwide.",
-        "addressLine1": "136 Fifth Avenue",
-        "addressLine2": "New York, NY 10011",
-        "phone": "+1 (212) 555-0198"
+        "addressLine1": "Spandaryan 7/1",
+        "addressLine2": "Vedi",
+        "phone": "+37494567416"
     },
     "metadata": {
         "title": "Archimegapolis | Award-Winning Architecture Studio",
@@ -347,7 +347,7 @@
         "email": "Email",
         "phoneLabel": "Phone",
         "studio": "Studio",
-        "address": "136 Fifth Avenue, New York, NY 10011",
+        "address": "Vedi, Spandaryan 7/1",
         "form": {
             "name": "Full Name *",
             "email": "Email Address *",
